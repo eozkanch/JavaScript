@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    <h1>Type Conversion</h1>
+
+    
+
+    <script>
+
+    const money1="100";
+    console.log(Number(money1)+15);//115  The Number() method converts a value to a number
+
+    
+    const lang="javaScript";
+    console.log(Number(lang));//NaN =Not A Number  The Number() method if the value cannot be converted."NaN" is returned.
+    console.log(Number("123abc"));//NaN
+
+    const money2=5400;
+    console.log(money2+15);
+    console.log(String(money2)+15);// 540015    The string method converts a value to a string
+
+
+    </script>
+    
+    
+</body>
+</html>
