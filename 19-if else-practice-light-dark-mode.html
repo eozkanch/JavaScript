@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+button{
+    background-color: black;
+    color:white;
+}
+.dark{
+    background-color: black;
+    color:white;
+}
+.dark button{
+ background-color: white;
+ color:black;
+
+}
+    </style>
+</head>
+<body>
+    
+<h1>DARK MODE LIGHT MODE</h1>
+<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ad neque aspernatur dolor quam vero ea sunt ipsum delectus aut dolorem nisi, dolores, quisquam quo, inventore unde recusandae aliquid cupiditate!</P>
+
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit voluptatem neque nesciunt optio minima, rerum, porro animi laboriosam quasi, iusto vero officia fugiat architecto rem. Ab commodi alias dicta.</P>
+
+<button onclick="setdarkMode()" id="btnMode">Dark Mode</button>
+
+<script>
+
+let mode="LIGHT MODE";
+
+function setdarkMode(){
+
+    let btnMode=document.querySelector("#btnMode");
+    let body=document.querySelector("body");
+
+    btnMode.innerText=mode;
+    if(mode==="LIGHT MODE"){
+        body.classList.add("dark");
+        mode="DARK MODE";
+        console.log(mode);
+
+    }else{
+
+        body.classList.remove("dark");
+        mode="LIGHT MODE";
+
+    }
+
+
+
+}
+
+
+
+
+</script>
+</body>
+</html>
