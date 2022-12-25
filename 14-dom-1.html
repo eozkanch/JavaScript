@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.text__blue{
+    color:blue;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Ali Desidero</h1>
+    <p>My Name is...</p>
+    <input id="input1" type="text" value="name">
+    <button type=""button" id="btn" onclick="sayHello()">Hello World</button>
+
+
+<script>
+ let name=document.querySelector("h1").innerText;
+ let text=document.querySelector("p");
+ let input1=document.querySelector("#input1");
+ console.log(input1.value);
+
+
+
+ console.log(text);
+
+text.innerText=`My name is ${name}`;
+
+
+text.classList.add("text__blue");
+text.classList.remove("text__blue");
+
+
+console.log(text.style);
+text.style.backgroundColor="blue";
+text.style.color="white";
+
+
+function sayHello(){
+alert(`hello, ${input1.value}`);
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

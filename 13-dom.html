@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+<body>
+    <h1><em>A heading</em></h1>
+    <h1>More</h1>
+    <h1>More</h1>
+    
+   <p class="text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, delectus? Hic distinctio animi inventore et alias doloremque incidunt quaerat unde dolore ab quos autem veritatis, eaque dicta culpa facilis nesciunt.
+
+   </p>
+   <button type="button" id="btn">Click</button>
+    <script>
+            //DOM elements
+let title=document.querySelector("h1");
+let text=document.querySelector(".text");
+let btn=document.querySelector("#btn");
+let alttitle=document.querySelectorAll("h1");
+
+        console.log(document.querySelector("h1"));
+        console.log(document.querySelector(".text"));
+        console.log(document.querySelector("#btn"));
+
+        console.log(document.querySelectorAll("h1"))
+
+
+       title.innerText=`<em>This is a test with InnerText.</em>`;
+        title.innerHTML=`<em>This is a test with innerHTML</em>`;
+        console.log(text.classList.value);
+        console.log(text.classList);
+    </script>
+</body>
+</html>
