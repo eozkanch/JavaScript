@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const userName=Number(prompt("Please enter o postive number"));
+
+        const isPrime=(num)=>{
+            let isPrime=true;
+
+            if(num===1){
+                console.log("1 is neither prime nor composite number");
+
+            }else if (num>1){
+                    for (let i=2; i<num; i++){
+                        if(num%i===0){
+                            isPrime=false;
+                            break;
+                        }
+
+                    }
+                    if(isPrime){
+                        console.log(`${num}is a prime number`);
+
+                    }else {
+                        console.log(`${num}is not  a prime number`);
+                    }
+
+             }else{
+                        console.log("the number you have given is not a prime number")
+                    }
+                    return isPrime;
+            };
+            
+    
+
+        isPrime(userName);
+
+
+
+
+    </script>
+</body>
+</html>
