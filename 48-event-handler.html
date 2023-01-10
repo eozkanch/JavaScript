@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Handling</h1>
+    <button onclick="click1()">Button</button>
+    <button id="click2">Button 2</button>
+    <button id="click3">Button 3</button>
+    <button id="click4">Button 4</button>
+    <button id="click5">Button 5</button>
+    <button id="click6">Button 6</button>
+    <script>
+
+        const click1=()=>{
+            console.log("1st button is click")
+        };
+
+        const click2=()=>{
+            console.log("2nd button is click")
+        };
+    document.querySelector("#click2").onclick=click2;
+
+    document.querySelector("#click3").onclick=function(){
+        console.log("3rd button is click");
+    };
+
+    document.querySelector("#click4").onclick=()=>{
+        console.log("4th button is click");
+    };
+
+    const click5=()=>{
+            alert("5th button is click")
+        };
+        document.querySelector("#click5").addEventListener("click",click5); 
+
+        document.querySelector("#click6").addEventListener("click",()=>{alert("6th button is click");});
+    </script>
+    
+</body>
+</html>
