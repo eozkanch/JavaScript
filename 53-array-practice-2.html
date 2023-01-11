@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const newArray=[5,62,43,7,51,78,8,68,456,2];
+
+        const anotherArray=[55];
+
+        const findMax=(arr)=>{
+            let maxNum=arr[0] ;
+
+            for (let index=1; index<arr.length; index++){
+                if(arr[index]>maxNum){
+                    maxNum
+=arr[index];                }
+            }
+            return maxNum;
+        
+        };
+alert(findMax(newArray));
+
+
+
+
+
+    </script>
+</body>
+</html>

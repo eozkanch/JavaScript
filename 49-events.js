@@ -1,6 +1,6 @@
 const btnAverage=document.querySelector("#btnAverage");
 
-        btnAverage.addEventListener("click",() => {
+        btnAverage.addEventListener("click", () => {
             const grade1=document.querySelector("#grade1").value;
             const grade2=document.querySelector("#grade2").value;
 
@@ -12,7 +12,7 @@ const btnAverage=document.querySelector("#btnAverage");
 //isNan(variable);
         const getAverage=(num1,num2)=>{
             if(isNaN(parseFloat(num1))|| isNaN(parseFloat(num2))) return;
-            const average=parseFloat(num1)+parseFloat(num2)/2;
+            const average=(parseFloat(num1)+parseFloat(num2))/2;
             return average;
 
         };
