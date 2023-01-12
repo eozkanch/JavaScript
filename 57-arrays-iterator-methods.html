@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+const numbers=[1,2,3,4,5,6];
+const animals=[
+        "Elephant",
+        "Bird",
+        "Mouse",
+        "Bird",
+        "Cat",
+        "Bird"
+        ];
+
+for (let i=0; i<numbers.length; i++){
+    numbers[i]+=i;
+}
+
+for (let index in numbers){
+
+   numbers[index]+=index;
+}
+
+for(let item of numbers){
+
+    console.log(item);
+}
+
+animals.forEach((item,index)=>{
+    console.log(item,index);
+});
+
+const mappedAnimals=animals.map((animal,index)=>{return animal+" "+index});
+console.log(animals);
+console.log(mappedAnimals);
+
+const filteredArray=numbers.filter((number,index)=>{return number>4;});
+
+console.log(filteredArray);
+
+const reducedArray=numbers.reduce((total,item)=>total+item,0);
+console.log(reducedArray);
+
+    </script>
+</body>
+</html>
