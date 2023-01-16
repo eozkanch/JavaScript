@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+            const coordinates=[-100,150,-32,43,-20 ];
+
+                        console.log(
+                            coordinates.filter((coordinate)=>coordinate<0)
+                            .map((coordinate)=> coordinate*-1)
+
+                        );
+            const newCoordinates=coordinates
+            .filter((coordinate)=>coordinate<0)
+            .map((coordinate)=>coordinate*-1);
+
+            console.log(newCoordinates);
+            newCoordinates.forEach((coordinate)=>console.log(coordinate));
+
+            coordinates
+            .filter((coordinate)=>coordinate<0)
+            .map((coordinate)=>coordinate*-1)
+            .forEach((coordinate)=>console.log(coordinate));
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
