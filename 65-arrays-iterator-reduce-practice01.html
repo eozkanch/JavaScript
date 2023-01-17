@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+const nums=[10,50,5];
+
+nums.reduce((total,num)=>{
+    console.log(total,num)
+    return total+num;
+})
+
+const salaries=[3000,2891,3500,4200,7000,2500];
+
+
+const totalAmount=salaries.filter((salary)=>salary<3000)
+.map((s)=>s*1.10)
+.reduce((total,item)=>{
+    return total+item;
+},0);
+
+
+console.log(totalAmount)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
